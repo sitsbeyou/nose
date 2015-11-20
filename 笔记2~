@@ -1,0 +1,16 @@
+超时调用, 间隙调用
+   setTimeout(function() {
+   	alert("hello");
+   }, 5000);
+   
+   var intervalId = null;
+   
+   intervalId = setInterval(function(){
+     console.log("a second");
+   }, 1000
+   	)
+取消间隙调用的重要性, 以及尽量避免间隙调用, 用超时调用来模拟
+clearInterval(intervalId);
+
+
+
